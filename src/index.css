@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Nunito Sans', sans-serif;
+}
+.unscrollable {
+  overflow: hidden;
+  pointer-events: none;
+  touch-action: none;
+}
+.wrapperFilter {
+  filter: brightness(50%);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+option {
+  @apply text-[#484848] cursor-pointer font-bold pl-2 py-1;
+}
+.hovered {
+  background-color: #dadada;
+}
+.firstOne {
+  background-color: #dadada;
+}
+.beforeAnimation {
+  transition: transform 0.2s ease-in-out;
+}
+.animated {
+  transform: rotate(180deg);
+}
+.searchAnimation {
+  transition: all 0.7s ease-in-out;
+}
+.inputPlaceholder:hover input::placeholder {
+  color: #e60012;
+}
+.searchImage:hover img {
+  transition: 0.4s;
+  filter: brightness(50%);
+}
+.btnAnimation {
+  transition: all 300ms ease-out 25ms;
+}
+.featureModalAnimation {
+  transform: translateY(-15px);
+  transition: all 325ms ease-out;
+}
+.featureModalTransition {
+  transition: all 325ms ease-in-out;
+}
+.arrowAnimationTransition {
+  transition: all 325ms ease-in-out;
+}
+.newsModal:not(:hover) img {
+  filter: brightness(100%);
+  transition: all 350ms ease-in-out;
+}
+.newsModal:hover img {
+  filter: brightness(70%);
+  transition: all 350ms ease-in-out;
+}
+.underline-transition {
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease-out;
+}
+.underline-transition:hover {
+  border-color: white;
+}
+.region {
+  border-bottom: 2px solid transparent;
+}
+.region-transition {
+  border-color: white;
+  transition: border-color 0.3s ease-out;
+}
+.links li span {
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.3s ease-out;
+}
+.links li span:hover {
+  border-color: currentColor;
+}
+.links li:first-child {
+  padding-bottom: 9px;
+  font-size: large;
+  font-weight: 700;
+  color: #484848;
+}
+.links li:not(:first-child) {
+  color: #e60012;
+  font-weight: 700;
+}
+.rounded {
+  border-radius: 11px 0px 0px 11px;
+}
